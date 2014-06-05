@@ -3,6 +3,7 @@ package com.example.wheretoeat;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -11,13 +12,30 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.os.Build;
+import android.widget.*;
 
 public class RecommendMenu extends ActionBarActivity {
-	
+	private Button confirmButton;
+	private Button returnButton;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.recommend);
+		
+		confirmButton = (Button) findViewById(R.id.button3);
+		returnButton = (Button) findViewById(R.id.button2);
+		
+		returnButton.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				Intent intent = new Intent();
+				intent.setClass(RecommendMenu.this, MainMenu.class);
+				startActivity(intent);
+				RecommendMenu.this.finish();
+			}
+		});
 	}
 
 	@Override
