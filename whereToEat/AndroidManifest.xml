@@ -23,6 +23,8 @@
             </intent-filter>
         </activity>
         <activity android:name="com.example.wheretoeat.RecommendMenu"></activity>
+        <activity android:name="com.example.wheretoeat.CommentMenu"></activity>
+        <activity android:name="com.example.wheretoeat.EndMenu"></activity>
     </application>
 
 </manifest>

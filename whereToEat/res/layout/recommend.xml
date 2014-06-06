@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="Here is the recommend menu"
+        android:text="推荐菜单"
         android:textColor="#FFFFFF"
         android:textSize="20dp" />
 
@@ -38,39 +38,36 @@
         android:layout_gravity="center"
         android:textSize="20dp" />
 
-	<LinearLayout
-	    android:layout_width="match_parent"
-	    android:layout_height="wrap_content"
-	    android:background="#000000"
-	    android:gravity="right"
-	    android:orientation="horizontal" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:gravity="right"
+        android:orientation="horizontal" >
 
-		<Button
-		    android:id="@+id/button2"
-		    android:layout_width="wrap_content"
-		    android:layout_height="wrap_content"
-		    android:layout_gravity="center_vertical|center_horizontal"
-		    android:text="返回"
-		    android:textColor="#FFFFFF" />
+        <Button
+            android:id="@+id/button11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:text="返回"
+            android:textColor="#FFFFFF" />
 
-"
-    	
-    	<Button
-    	    android:id="@+id/button3"
-    	    android:layout_width="wrap_content"
-    	    android:layout_height="wrap_content"
-    	    android:layout_gravity="center_vertical|center_horizontal"
-    	    android:text="就是你了"
-    	    android:textColor="#FFFFFF" />
+        <Button
+            android:id="@+id/button12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:text="就是你了"
+            android:textColor="#FFFFFF" />
 
-    	<Button
-    	    android:id="@+id/button4"
-    	    android:layout_width="wrap_content"
-    	    android:layout_height="wrap_content"
-    	    android:layout_gravity="center_vertical|center_horizontal"
-    	    android:text="换一个"
-    	    android:textColor="#FFFFFF" />
-
+        <Button
+            android:id="@+id/button13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:text="换一个"
+            android:textColor="#FFFFFF" />
     </LinearLayout>
 
 </LinearLayout>

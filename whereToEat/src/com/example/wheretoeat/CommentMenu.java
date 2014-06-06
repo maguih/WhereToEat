@@ -14,38 +14,24 @@ import android.view.ViewGroup;
 import android.os.Build;
 import android.widget.*;
 
-public class RecommendMenu extends ActionBarActivity {
-	private Button confirmButton;
-	private Button returnButton;
+public class CommentMenu extends ActionBarActivity {
+	private Button commentButton;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.recommend);
+		setContentView(R.layout.comment);
 		
-		returnButton = (Button) findViewById(R.id.button11);
-		confirmButton = (Button) findViewById(R.id.button12);
+		commentButton = (Button) findViewById(R.id.button21);
 		
-		returnButton.setOnClickListener(new View.OnClickListener() {
+		commentButton.setOnClickListener(new View.OnClickListener() {
 			
 			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				Intent intent = new Intent();
-				intent.setClass(RecommendMenu.this, MainMenu.class);
+				intent.setClass(CommentMenu.this, EndMenu.class);
 				startActivity(intent);
-				RecommendMenu.this.finish();
-			}
-		});
-		
-		confirmButton.setOnClickListener(new View.OnClickListener() {
-			
-			@Override
-			public void onClick(View arg0) {
-				// TODO Auto-generated method stub
-				Intent intent = new Intent();
-				intent.setClass(RecommendMenu.this, CommentMenu.class);
-				startActivity(intent);
-				RecommendMenu.this.finish();
+				CommentMenu.this.finish();
 			}
 		});
 	}

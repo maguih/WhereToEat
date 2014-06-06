@@ -13,7 +13,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="Welcome to WhereToEat"
+        android:text="欢迎来到“哪里吃”"
         android:textColor="#FFFFFF"
         android:textSize="20dp" />
 
@@ -28,7 +28,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Where To Eat"
+        android:text="哪里吃"
         android:textColor="#FFFFFF" />
 
 </LinearLayout>
