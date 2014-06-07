@@ -13,7 +13,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="欢迎来到“哪里吃”"
+        android:text="登录成功"
         android:textColor="#FFFFFF"
         android:textSize="20dp" />
 
