@@ -17,6 +17,7 @@ import android.content.Intent;
 
 public class LoginMenu extends ActionBarActivity {
 	private Button LoginButton;
+	private Button SignupButton;
 	private EditText nameText;
 	private EditText pwText;
 	@Override
@@ -24,9 +25,20 @@ public class LoginMenu extends ActionBarActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.login);
 		
-		LoginButton = (Button) findViewById(R.id.button0);
+		SignupButton = (Button) findViewById(R.id.button00);
+		LoginButton = (Button) findViewById(R.id.button01);
 		nameText = (EditText) findViewById(R.id.editText1);
 		pwText = (EditText) findViewById(R.id.editText2);
+		
+		SignupButton.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				DisplayToast("功能暂未实现");
+			}
+		});
+		
 		LoginButton.setOnClickListener(new View.OnClickListener() {
 			
 			@Override
@@ -42,6 +54,12 @@ public class LoginMenu extends ActionBarActivity {
 					DisplayToast("密码不能为空");
 					return;
 				}
+				
+				if (!name.equals("admin") || !pw.equals("admin")) {
+					DisplayToast("帐号或密码错误");
+					return;
+				}
+					
 					
 				Intent intent = new Intent();
 				intent.setClass(LoginMenu.this, MainMenu.class);
